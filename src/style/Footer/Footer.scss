@@ -1,0 +1,44 @@
+#footer{
+  background: #121212;
+  padding: 50px 0;
+  .footer{
+    &--first{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .navbar{
+        &--nav{
+          padding: 0 30px;
+          font-family: 'Montserrat', sans-serif;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 20px;
+          text-transform: capitalize;
+          color: #FFFFFF;
+          text-decoration: none;
+        }
+      }
+      h1{
+        span{
+          color: #FDFDFD;
+          font-size: 36px;
+          margin: 0 8px;
+        }
+      }
+    }
+    .line{
+      margin: 40px 0 20px 0;
+    }
+    p{
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      text-transform: capitalize;
+      color: #FFFFFF;
+      text-align: center;
+    }
+  }
+}
