@@ -5,7 +5,6 @@ import {FiSearch} from "react-icons/fi";
 
 const Header = () => {
     const [load, setLoad] = useState(true)
-    const search = <FiSearch/>
 
     setTimeout(() => {
         setLoad(false);
