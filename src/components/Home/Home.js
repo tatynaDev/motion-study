@@ -34,9 +34,7 @@ const Home = () => {
     }
     return (
         <sectioin id='home'>
-            <div className="home" style={{
-                padding:'100px 0'
-            }}>
+            <div className="home" >
                 <div id="study">
                     <div className="container">
                         <div className="study">

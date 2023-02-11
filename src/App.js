@@ -11,31 +11,32 @@ import UnitedStates from "./components/StudyAbroad/countries/UnitedStates";
 import Solbrige from "./components/StudyAbroad/Universities/Solbrige";
 
 function App() {
-  const [load, setLoad] = useState(true)
+    const [load, setLoad] = useState(true)
 
-  useEffect(() => {
-    setTimeout(() => {
-      setLoad(false);
-    }, 5800);}, []);
+    useEffect(() => {
+        setTimeout(() => {
+            setLoad(false);
+        }, 5800);
+    }, []);
 
-  return (
-    <div className="App">
-      <Loading load={load}/>
-      <div style={{
-        display: load ? 'none' : 'block'
-      }}>
-        <Routes>
-          <Route path={'/'} element={<Home/>}/>
-          <Route path={'/AboutUs'} element={<AboutUs/>}/>
-          <Route path={'/StudyAbroad'} element={<StudyAbroad/>}/>
-          <Route path={'/Contacts'} element={<Contacts/>}/>
-          <Route path={'/choose'} element={<Choose/>}/>
-          <Route path={'/unitedStates'} element={<UnitedStates/>}/>
-          <Route path={'//university'} element={<Solbrige/>}/>
-        </Routes>
-      </div>
-    </div>
-  );
+    return (
+        <div className="App">
+            <Loading load={load}/>
+            <div style={{
+                display: load ? 'none' : 'block'
+            }}>
+                <Routes>
+                    <Route path={'/'} element={<Home/>}/>
+                    <Route path={'/AboutUs'} element={<AboutUs/>}/>
+                    <Route path={'/StudyAbroad'} element={<StudyAbroad/>}/>
+                    <Route path={'/Contacts'} element={<Contacts/>}/>
+                    <Route path={'/choose'} element={<Choose/>}/>
+                    <Route path={'/unitedStates'} element={<UnitedStates/>}/>
+                    <Route path={'//university'} element={<Solbrige/>}/>
+                </Routes>
+            </div>
+        </div>
+    );
 }
 
 export default App;
