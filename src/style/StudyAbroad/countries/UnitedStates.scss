@@ -1,0 +1,77 @@
+#states{
+  padding: 170px 0 200px 0;
+  .states{
+    h1{
+      font-family: 'Gilroy', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 49px;
+      color: #212121;
+    }
+    &--edu{
+      select{
+        border: none;
+        margin: 40px 50px 0 0;
+        option{
+          border: none;
+          font-family: 'Montserrat', sans-serif;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 24px;
+          text-transform: capitalize;
+          color: #010D39;
+        }
+      }
+    }
+    .uni{
+      display: flex;
+      flex-direction: column;
+      padding: 50px 0;
+      &--block{
+        width: 1150px;
+        height: 203px;
+        background: #FDFDFD;
+        box-shadow: 0 0 24px rgba(0, 0, 0, 0.05);
+        display: flex;
+        align-items: center;
+        margin: 18px 0;
+        transition: .3s;
+        &:hover{
+          transform: scale(1.05);
+        }
+        img{
+          margin-left: 30px;
+        }
+        &__info{
+          margin-left: 120px;
+          h1{
+            font-family: 'Gilroy', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 28px;
+            line-height: 34px;
+            color: #1AA2EE;
+          }
+          h2{
+            font-family: 'Montserrat', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            color: #B5B5B5;
+          }
+          h3{
+            font-family: 'Montserrat', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            color: #212121;
+          }
+        }
+      }
+    }
+  }
+}

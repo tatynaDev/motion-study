@@ -5,7 +5,6 @@ import {FiSearch} from "react-icons/fi";
 
 const Header = () => {
     const [load, setLoad] = useState(true)
-    const search = <FiSearch/>
 
     setTimeout(() => {
         setLoad(false);
@@ -23,10 +22,10 @@ const Header = () => {
                     </Link>
 
                     <div className="header--nav">
-                        <NavLink className='header--nav__link' to={'/'}>Home</NavLink>
-                        <NavLink className='header--nav__link' to={'/AboutUs'}>About Us</NavLink>
-                        <NavLink className='header--nav__link' to={'/StudyAbroad'}>Study Abroad</NavLink>
-                        <NavLink className='header--nav__link' to={'/Contacts'}>Contacts</NavLink>
+                        <NavLink className='header--nav__link' to={'/'}>Home <span></span></NavLink>
+                        <NavLink className='header--nav__link' to={'/AboutUs'}>About Us <span></span></NavLink>
+                        <NavLink className='header--nav__link' to={'/StudyAbroad'}>Study Abroad <span></span></NavLink>
+                        <NavLink className='header--nav__link' to={'/Contacts'}>Contacts <span></span></NavLink>
                     </div>
 
                     <div className="header--choose">
