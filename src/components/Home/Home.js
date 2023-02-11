@@ -1,25 +1,27 @@
 import React from 'react';
+import password from '../../img/Ellipse 6.svg'
+import people from '../../img/Ellipse 4.png'
+import parish from '../../img/Ellipse 5.png'
+import city from '../../img/Ellipse 7.png'
+import frame from '../../img/Frame 23.png'
+import {FiPhone} from "react-icons/fi";
+import {CiUser} from "react-icons/ci";
 import friends from '../../img/Component 41.png'
 import book from '../../img/Frame 71.png'
 import user from '../../img/Frame 71 (1).png'
 import time from '../../img/Frame 71 (2).png'
 import prices from '../../img/Frame 71 (3).png'
 import rectangle from '../../img/Rectangle 19.png'
-import youtube from '../../img/Frame 243.png'
 import girl from '../../img/Frame 196.png'
 import notebook from '../../img/Frame 196 (1).png'
-import password from '../../img/Ellipse 6.svg'
-import people from '../../img/Ellipse 4.png'
-import parish from '../../img/Ellipse 5.png'
-import city from '../../img/Ellipse 7.png'
-import frame from '../../img/Frame 23.png'
-import {CiUser} from "react-icons/ci";
-import {FiPhone} from "react-icons/fi";
-import {BiPhoneCall} from "react-icons/bi";
-import {FaTelegramPlane} from "react-icons/fa";
-import {TfiEmail} from "react-icons/tfi";
-import {BsInstagram, BsWhatsapp,} from "react-icons/bs";
 import Slider from 'react-slick'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import youtube from '../../img/Frame 243.png'
+import {BiPhoneCall} from "react-icons/bi";
+import {TfiEmail} from "react-icons/tfi";
+import {BsInstagram, BsWhatsapp} from "react-icons/bs";
+import {FaTelegramPlane} from "react-icons/fa"
 import {Link} from "react-router-dom";
 
 const Home = () => {
@@ -33,7 +35,7 @@ const Home = () => {
     return (
         <sectioin id='home'>
             <div className="home" style={{
-                padding: '100px 0'
+                padding:'100px 0'
             }}>
                 <div id="study">
                     <div className="container">
@@ -44,8 +46,7 @@ const Home = () => {
                                         <h2>EXPLORE THE WORLD</h2>
                                         <h1>Study abroad <br/> with our help</h1>
                                         <p>
-                                            Study at the world's top universities and <br/> expand your horizons. Get
-                                            the
+                                            Study at the world's top universities and <br/> expand your horizons. Get the
                                             highest <br/>
                                             quality education and achieve success <br/> abroad.
                                         </p>
@@ -113,8 +114,7 @@ const Home = () => {
                                         best from others
                                     </h1>
                                     <p>
-                                        We provide full support at all stages of preparation, including <br/> assistance
-                                        in
+                                        We provide full support at all stages of preparation, including <br/> assistance in
                                         filing documents and preparing for an interview. <br/> Contact us and start your
                                         journey to higher education <br/> abroad!
                                     </p>
@@ -187,8 +187,7 @@ const Home = () => {
                                 <h1>EXAMS</h1>
                                 <p>
                                     Exams are tests that assess a person's knowledge, skills, aptitude, <br/> or other
-                                    qualifications in a specific subject or area of study. They are <br/> used to
-                                    evaluate
+                                    qualifications in a specific subject or area of study. They are <br/> used to evaluate
                                     academic performance.
                                 </p>
                             </div>
