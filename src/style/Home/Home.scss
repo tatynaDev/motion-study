@@ -1,7 +1,7 @@
-#study {
-  .study {
+#study1 {
+  .study1 {
     font-family: 'Montserrat', sans-serif;
-    margin: 40px 0;
+    padding: 100px 0 220px 0;
 
     &--one {
       position: relative;
@@ -183,7 +183,7 @@
       font-family: 'Montserrat', sans-serif;
       display: flex;
       justify-content: space-between;
-      margin: 200px 0 175px 0;
+      margin: 0 0 175px 0;
 
       &--one {
         &__text {
@@ -199,7 +199,7 @@
             font-size: 18px;
             line-height: 33px;
             color: #010D39;
-            padding: 30px 0 50px 0;
+            padding: 30px 0 65px 0;
           }
         }
       }
@@ -409,11 +409,16 @@
 #video {
   .video {
     &--text {
+      font-family: 'Montserrat', sans-serif;
+      text-align: center;
+      padding: 180px 0 121px 0;
 
-    }
+      h1 {
+        color: #000;
+        font-size: 44px;
+        font-weight: 300;
 
-    .img {
-
+      }
     }
   }
 }

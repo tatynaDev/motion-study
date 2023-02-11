@@ -35,67 +35,68 @@ const Home = () => {
     return (
         <sectioin id='home'>
             <div className="home" style={{
-                padding:'100px 0'
+                padding: '100px 0'
             }}>
-                <div id="study">
+                <div id="study1">
                     <div className="container">
-                        <div className="study">
-                            <div className="study--one">
-                                <div className="study--one__two">
-                                    <div className="study--one__two--text">
+                        <div className="study1">
+                            <div className="study1--one">
+                                <div className="study1--one__two">
+                                    <div className="study1--one__two--text">
                                         <h2>EXPLORE THE WORLD</h2>
                                         <h1>Study abroad <br/> with our help</h1>
                                         <p>
-                                            Study at the world's top universities and <br/> expand your horizons. Get the
+                                            Study at the world's top universities and <br/> expand your horizons. Get
+                                            the
                                             highest <br/>
                                             quality education and achieve success <br/> abroad.
                                         </p>
                                     </div>
-                                    <div className="study--one__two--img">
-                                        <div className="study--one__two--img__one">
-                                            <div className="study--one__two--img__one--left">
+                                    <div className="study1--one__two--img">
+                                        <div className="study1--one__two--img__one">
+                                            <div className="study1--one__two--img__one--left">
                                                 <div className="study--one__two--img__one--left__last">
                                                     <img src={password} alt=""/>
                                                 </div>
-                                                <div className="study--one__two--img__one--left__img1">
+                                                <div className="study1--one__two--img__one--left__img1">
                                                     <img src={people} alt=""/>
                                                 </div>
                                             </div>
-                                            <div className="study--one__two--img__one--right">
-                                                <div className="study--one__two--img__one--right__parish">
+                                            <div className="study1--one__two--img__one--right">
+                                                <div className="study1--one__two--img__one--right__parish">
                                                     <img src={parish} alt=""/>
                                                 </div>
-                                                <div className="study--one__two--img__one--right__city">
+                                                <div className="study1--one__two--img__one--right__city">
                                                     <img src={city} alt=""/>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="study--one__two--img__frame">
+                                        <div className="study1--one__two--img__frame">
                                             <img src={frame} alt=""/>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="study--one__contact">
-                                    <div className="study--one__contact--name">
-                                        <div className="study--one__contact--name__icons">
-                                            <div className="study--one__contact--name__icons--one">
+                                <div className="study1--one__contact">
+                                    <div className="study1--one__contact--name">
+                                        <div className="study1--one__contact--name__icons">
+                                            <div className="study1--one__contact--name__icons--one">
                                                 <h1><CiUser/></h1>
                                             </div>
-                                            <div className="study--one__contact--name__icons--text">
+                                            <div className="study1--one__contact--name__icons--text">
                                                 <h1>NAME</h1>
                                                 <span>|Enter your name</span>
                                             </div>
                                         </div>
-                                        <div className="study--one__contact--name__phone">
-                                            <div className="study--one__contact--name__phone--one">
+                                        <div className="study1--one__contact--name__phone">
+                                            <div className="study1--one__contact--name__phone--one">
                                                 <h1><FiPhone/></h1>
                                             </div>
-                                            <div className="study--one__contact--name__phone--text">
+                                            <div className="study1--one__contact--name__phone--text">
                                                 <h1>PHONE</h1>
                                                 <span>Enter your phone</span>
                                             </div>
                                         </div>
-                                        <div className="study--one__contact--name__btn">
+                                        <div className="study1--one__contact--name__btn">
                                             <button>Сontact</button>
                                         </div>
                                     </div>
@@ -114,7 +115,8 @@ const Home = () => {
                                         best from others
                                     </h1>
                                     <p>
-                                        We provide full support at all stages of preparation, including <br/> assistance in
+                                        We provide full support at all stages of preparation, including <br/> assistance
+                                        in
                                         filing documents and preparing for an interview. <br/> Contact us and start your
                                         journey to higher education <br/> abroad!
                                     </p>
@@ -187,7 +189,8 @@ const Home = () => {
                                 <h1>EXAMS</h1>
                                 <p>
                                     Exams are tests that assess a person's knowledge, skills, aptitude, <br/> or other
-                                    qualifications in a specific subject or area of study. They are <br/> used to evaluate
+                                    qualifications in a specific subject or area of study. They are <br/> used to
+                                    evaluate
                                     academic performance.
                                 </p>
                             </div>
@@ -267,11 +270,12 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
+
                 <div id="video">
                     <div className="container">
                         <div className="video">
-                            <div className="video--tex">
-
+                            <div className="video--text">
+                                <h1>Video testimonials from our students</h1>
                             </div>
                             <Slider {...settings}>
                                 <div className="img">
@@ -321,7 +325,6 @@ const Home = () => {
                                     <button>Submit</button>
                                 </div>
                             </div>
-
                             <div className="contact--two">
                                 <div className="contact--two__text">
                                     <div className="contact--two__text--h1">
@@ -357,6 +360,7 @@ const Home = () => {
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
