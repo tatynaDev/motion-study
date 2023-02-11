@@ -1,0 +1,58 @@
+#choose{
+  padding: 200px 0 300px 0;
+  .choose{
+    h1{
+      font-family: 'Gilroy', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 48px;
+      line-height: 58px;
+      color: #212121;
+    }
+    &--edu{
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+      text-transform: capitalize;
+      color: #010D39;
+      margin-top: 20px;
+      select{
+        border: none;
+        margin: 0 30px 0 0;
+        option{
+          outline: none;
+        }
+      }
+    }
+    .countries{
+      margin: 100px 0;
+      display: flex;
+      flex-wrap: wrap;
+      .countryCard{
+        //width: 235px;
+        //height: 295px;
+        padding: 30px 25px 20px 25px;
+        background: #FDFDFD;
+        box-shadow: 4.8212px 7.71391px 24.106px rgba(0, 0, 0, 0.1);
+        border-radius: 14px;
+        text-align: center;
+        margin: 0 30px 60px 35px;
+        transition: .3s;
+        &:hover{
+          transform: scale(1.1);
+        }
+        h1{
+          font-family: 'Montserrat', sans-serif;
+          font-style: normal;
+          font-weight: 200;
+          font-size: 24px;
+          line-height: 29px;
+          color: #212121;
+          margin: 20px 0;
+        }
+      }
+    }
+  }
+}
