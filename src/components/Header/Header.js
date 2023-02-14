@@ -1,14 +1,13 @@
 import React, {useState} from 'react';
 import {Link, NavLink} from "react-router-dom";
 import logo from '../../img/logo.svg'
-import {FiSearch} from "react-icons/fi";
 
 const Header = () => {
     const [load, setLoad] = useState(true)
 
     setTimeout(() => {
         setLoad(false);
-    }, 5900);
+    }, 2000);
 
     return (
         <section id='header' style={{

@@ -18,7 +18,8 @@ const UnitedStates = () => {
         {img: img4, title: 'Solbrige University', loc: 'Perth', acc: 'From 16'},
         {img: img5, title: 'Edith University', loc: 'Melbourne', acc: 'From 16'},
         {img: img6, title: 'DCU University', loc: 'Riga', acc: 'From 16'},
-        {img: img7, title: 'Cowan University', loc: 'Boston', acc: 'From 16'}
+        {img: img7, title: 'Cowan University', loc: 'Boston', acc: 'From 16'},
+
     ]
     return (
         <section id='states'>
