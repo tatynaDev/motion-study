@@ -1,5 +1,8 @@
 @import "App.scss";
 @import "./style/style";
+.filter{
+  backdrop-filter: blur(10px);
+}
 Link{
   cursor: pointer;
 }
