@@ -1,10 +1,10 @@
-import React from 'react';
+import React, {useState} from 'react';
 import password from '../../img/Ellipse 6.svg'
 import people from '../../img/Ellipse 4.png'
 import parish from '../../img/Ellipse 5.png'
 import city from '../../img/Ellipse 7.png'
 import frame from '../../img/Frame 23.png'
-import {FiPhone} from "react-icons/fi";
+import {FiFacebook, FiPhone} from "react-icons/fi";
 import {CiUser} from "react-icons/ci";
 import friends from '../../img/Component 41.png'
 import book from '../../img/Frame 71.png'
@@ -23,6 +23,8 @@ import {TfiEmail} from "react-icons/tfi";
 import {BsInstagram, BsWhatsapp} from "react-icons/bs";
 import {FaTelegramPlane} from "react-icons/fa"
 import {Link} from "react-router-dom";
+import {SlLink} from "react-icons/sl";
+import {ImWhatsapp} from "react-icons/im";
 
 const Home = () => {
     const settings = {
@@ -32,10 +34,18 @@ const Home = () => {
         slidesToShow: 2.1,
         slidesToScroll: 2.1,
     }
+    const [link, setLink] = useState(false)
+
+
+    function getLink() {
+        setLink(!link)
+    }
+
     return (
         <sectioin id='home'>
-            <div className="home" style={{
-                padding: '100px 0'
+            <div className={'home '} style={{
+                padding: '100px 0',
+
             }}>
                 <div id="study1">
                     <div className="container">
@@ -55,7 +65,16 @@ const Home = () => {
                                     <div className="study1--one__two--img">
                                         <div className="study1--one__two--img__one">
                                             <div className="study1--one__two--img__one--left">
-                                                <div className="study--one__two--img__one--left__last">
+                                                <div className="study--one__two--img__one--left__last" style={{
+                                                    padding: '0 0 25px 27px',
+                                                    transition: ' transform 900ms ease-in-out',
+                                                    animationDuration: ' 2s',
+                                                    transform: 'translate3d(0, 10%, 0)',
+                                                    animation: 'spin 3s infinite linear',
+                                                    animationTimingFunction: 'ease',
+                                                    animationFillMode: 'forwards',
+                                                    animationIterationCount: 'infinite',
+                                                }}>
                                                     <img src={password} alt=""/>
                                                 </div>
                                                 <div className="study1--one__two--img__one--left__img1">
@@ -204,9 +223,9 @@ const Home = () => {
                                         <h2>cambrige English exams</h2>
                                         <h1>Your path to learning English, step by step.</h1>
                                         <p>
-                                            Cambridge English Qualifications are in-depth exams <br/>
-                                            that make learning English enjoyable, effective and rewarding. <br/>
-                                            Our qualifications are based on research into effective <br/>
+                                            Cambridge English Qualifications are in-depth exams
+                                            that make learning English enjoyable, effective and rewarding.
+                                            Our qualifications are based on research into effective
                                             teaching and learning.
                                         </p>
                                         <div className="exams--one__img--text__a">
@@ -270,21 +289,20 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-
                 <div id="video">
                     <div className="container">
                         <div className="video">
-                            <div className="video--text">
+                            <div className="video--text" style={{outline: 'none'}}>
                                 <h1>Video testimonials from our students</h1>
                             </div>
                             <Slider {...settings}>
-                                <div className="img">
+                                <div className="img" style={{outline: 'none'}}>
                                     <img src={youtube} alt=""/>
                                 </div>
-                                <div className="img">
+                                <div className="img" style={{outline: 'none'}}>
                                     <img src={youtube} alt=""/>
                                 </div>
-                                <div className="img">
+                                <div className="img" style={{outline: 'none'}}>
                                     <img src={youtube} alt=""/>
                                 </div>
                             </Slider>
@@ -359,13 +377,46 @@ const Home = () => {
                                         </iframe>
                                     </div>
                                 </div>
+                                <div className="contact--two__link">
+                                    <button onClick={() => getLink()} className='click'>
+                                        <SlLink/>
+                                    </button>
+                                    <div style={{
+                                        transform: link ? 'scale(1)' : 'scale(0)',
+                                    }} className='modals'>
+                                        <div className="container">
+                                            <div className="modal">
+                                                <div className="modal--text">
+                                                    <h1>send</h1>
+                                                </div>
+                                                <div className="modal--one">
+                                                    <div className="modal--one__what modal--one--block">
+                                                        <ImWhatsapp className='icon'/>
+                                                    </div>
+                                                    <div className="modal--one__inst modal--one--block">
+                                                        <BsInstagram className='icon'/>
+                                                    </div>
+                                                    <div className="modal--one__face modal--one--block">
+                                                        <FiFacebook className='icon'/>
+                                                    </div>
+                                                    <div className="modal--one__telegram modal--one--block">
+                                                        <FaTelegramPlane className='icon'/>
+                                                    </div>
+                                                </div>
+                                                <div className="modal--btn">
+                                                    <button onClick={() => getLink(true)}>Done</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
             </div>
         </sectioin>
+
     );
 };
 
