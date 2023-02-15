@@ -44,12 +44,21 @@
               align-items: center;
 
               &__last {
+                padding: 0 0 15px 27px;
+                transition: transform 900ms ease-in-out;
+                animation-duration: 2s;
+                transform: translate3d(0, 20%, 0);
+                animation: spin 4s infinite linear;
+                animation-timing-function: ease;
+                animation-fill-mode: forwards;
+                animation-iteration-count: infinite;
                 @keyframes spin {
                   0%, 100% {
                     transform: translate(0, 0);
                   }
                   50% {
                     transform: translate(0, 10%);
+                    transform: translate(0, -20%);
                   }
                 }
               }

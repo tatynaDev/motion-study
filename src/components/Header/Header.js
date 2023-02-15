@@ -1,14 +1,15 @@
 import React, {useState} from 'react';
 import {Link, NavLink} from "react-router-dom";
 import logo from '../../img/logo.svg'
-import {FiSearch} from "react-icons/fi";
+import BurgerMenu from "./BurgerMenu";
 
 const Header = () => {
     const [load, setLoad] = useState(true)
+    const [button, setButton] = useState(false)
 
     setTimeout(() => {
         setLoad(false);
-    }, 5900);
+    }, 2000);
 
     return (
         <section id='header' style={{
@@ -34,7 +35,7 @@ const Header = () => {
                                type="text"
                                list='data-list'
                                aria-label='search'
-                               placeholder='🔍 Поиск..'
+                               placeholder='Поиск..'
                         />
                         <datalist id='data-list'>
                             <option value="South Korea">South Korea</option>
@@ -50,8 +51,35 @@ const Header = () => {
                             <option value="ru">RU</option>
                         </select>
                     </div>
+
+                    <div className="header--burger">
+                        <button onClick={() => setButton(!button)}>
+                            <div className='long' style={{
+                                transform: button ? 'rotate(-45deg)' : '',
+                                marginTop: button ? '6px' : ''
+                            }}></div>
+
+                            <div className='short' style={{
+                                display: button ? 'none' : 'block'
+                            }}></div>
+
+                            <div className='long' style={{
+                                transform: button ? 'rotate(45deg)' : '',
+                                marginTop: button ? '-5px' : ''
+                            }}></div>
+
+                            <div className='short' style={{
+                                display: button ? 'none' : 'block'
+                            }}></div>
+                        </button>
+
+
+                    </div>
+
                 </div>
             </div>
+            <BurgerMenu button={button} setButton={setButton}/>
+
         </section>
     );
 };
