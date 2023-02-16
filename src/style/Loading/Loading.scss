@@ -8,8 +8,6 @@
   border-radius: 50%;
   overflow: hidden;
   animation: res 6s ease-in-out alternate;
-
-  .in {
     @keyframes res {
       0% {
         transform: scale(1);
@@ -24,7 +22,7 @@
         transform: scale(10);
       }
     }
-  }
+
 
   .load {
     margin: 50px 0 0 30px;

@@ -9,7 +9,6 @@ const Loading = ({load}) => {
             <div className="load"
                  style={{textAlign:'center'}}
             >
-                <div className="in"></div>
                 <h1 className='load-zero'>0%</h1>
                 <h1 className='load-ten'>10%</h1>
                 <h1 className='load-fifty'>50%</h1>
