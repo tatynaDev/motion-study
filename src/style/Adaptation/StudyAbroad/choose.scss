@@ -1,0 +1,221 @@
+@media (max-width: 1540px) {
+  #choose {
+    .choose {
+      .choose--edu {
+        select {
+          font-family: 'Montserrat', sans-serif;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 17px;
+          text-transform: capitalize;
+          color: #010D39;
+        }
+      }
+
+      .countries {
+        .countryCard {
+          padding: 50px 50px 40px 50px;
+          margin: 0 30px 60px 43px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1540px) {
+  #choose {
+    .choose {
+      .choose--edu {
+        select {
+          font-family: 'Montserrat', sans-serif;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 17px;
+          text-transform: capitalize;
+          color: #010D39;
+        }
+      }
+
+      .countries {
+        .countryCard {
+          padding: 44px 39px 36px 39px;
+          margin: 0 30px 60px 43px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+
+}
+
+@media (max-width: 1200px) {
+  #choose {
+    .choose {
+      .countries {
+        .countryCard {
+          padding: 34px 27px 30px 27px;
+          margin: 0 22px 60px 21px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1140px) {
+  #choose {
+    .choose {
+      .countries {
+        .countryCard {
+          padding: 40px 45px 40px 45px;
+          margin: 0 35px 60px 39px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  #choose {
+    .choose {
+      .countries {
+        .countryCard {
+          padding: 25px 30px 40px 30px;
+          margin: 0 35px 60px 39px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  #choose {
+    .choose {
+      .countries {
+        .countryCard {
+          padding: 25px 30px 40px 30px;
+          margin: 0 30px 60px 30px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 880px) {
+  #choose {
+    .choose {
+      .countries {
+        margin: 100px 0 0 100px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #choose {
+    .choose {
+      h1 {
+        font-size: 40px;
+      }
+
+      .countries {
+        margin: 100px 0 0 0;
+        display: flex;
+        flex-direction: column;
+
+        .countryCard {
+          display: flex;
+          padding: 15px 30px 20px 0;
+          margin: 10px 0;
+
+          img {
+            width: 40%;
+          }
+
+          h1 {
+            width: 150px;
+            margin: 50px 0 0 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 660px) {
+  #choose {
+    .choose {
+      .countries {
+        .countryCard {
+          h1 {
+            width: 150px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  #choose {
+    .choose {
+      .countries {
+        .countryCard {
+          h1 {
+            width: 140px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  #choose {
+    .choose {
+      .countries {
+        .countryCard {
+          h1 {
+            width: 130px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  #choose {
+    .choose {
+      .countries {
+        .countryCard {
+          h1 {
+            width: 120px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  #choose {
+    .choose {
+      .countries {
+        .countryCard {
+          padding: 15px 0;
+
+          h1 {
+            width: 100px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+}

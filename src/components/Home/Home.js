@@ -32,6 +32,15 @@ const Home = () => {
     //     slidesToShow: 2.1,
     //     slidesToScroll: 2.1,
     // }
+
+const Home = () => {
+    const settings = {
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 2.1,
+        slidesToScroll: 2.1,
+    }
     const [link, setLink] = useState(false);
 
     function getLink() {
@@ -60,6 +69,8 @@ const Home = () => {
                                             quality education and achieve success <br/> abroad.
                                         </p>
                                     </div>
+
+
                                     <div className="study--one__two--img">
                                         <div className="study--one__two--img__one">
                                             <div className="study--one__two--img__one--left">
@@ -280,6 +291,26 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
+                <div id="video">
+                    <div className="container">
+                        <div className="video">
+                            <div className="video--text">
+                                <h1>video testimonials from our students</h1>
+                            </div>
+                            <Slider {...settings}>
+                                <div className="img">
+                                    <img src={youtube} alt=""/>
+                                </div>
+                                <div className="img">
+                                    <img src={youtube} alt=""/>
+                                </div>
+                                <div className="img">
+                                    <img src={youtube} alt=""/>
+                                </div>
+                            </Slider>
+                        </div>
+                    </div>
+                </div>
                 <div id="contact">
                     <div className="container">
                         <div className="contact">
@@ -363,6 +394,13 @@ const Home = () => {
                             <div className="modal--one">
                                 <div className="modal--one__what">
                                     <BsWhatsapp style={{fontSize: '28px'}}/>
+                                </div>
+                                <div className="modal--one__inst">
+                                    <FaInstagram style={{fontSize: '28px'}}/>
+                                </div>
+                                <div className="modal--one__face">
+                                    <FiFacebook style={{fontSize: '28px'}}/>
+                                </div>
                                 </div>
                                 <div className="modal--one__inst">
                                     <FaInstagram style={{fontSize: '28px'}}/>

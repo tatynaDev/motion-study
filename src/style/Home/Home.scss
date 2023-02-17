@@ -104,6 +104,15 @@
                 animation-timing-function: ease;
                 animation-fill-mode: forwards;
                 animation-iteration-count: infinite;
+                //@keyframes move {
+                //  0%, 100% {
+                //    transform: translate(0, 0);
+                //  }
+                //  50% {
+                //    transform: translate(0, 5%);
+                //  }
+                //}
+
                 img {
                   width: 100%;
                 }
@@ -271,6 +280,17 @@
             line-height: 33px;
             color: #010D39;
             padding: 30px 0 50px 0;
+          }
+
+          img {
+            width: 601.63px;
+            height: 350px;
+
+            &:hover {
+              transform: scale(1.1);
+            }
+          }
+
           }
 
           img {
@@ -776,6 +796,19 @@
       justify-content: space-evenly;
       padding: 30px 0 30px 0;
       &__what {
+
+    &--text {
+      text-align: center;
+      padding: 40px 0 0 0;
+    }
+
+    &--one {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      padding: 30px 0 30px 0;
+
+      &__what {
         border-radius: 50%;
         width: 50px;
         height: 50px;
@@ -787,6 +820,35 @@
       }
 
       &__inst {
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #d6249f;
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+        box-shadow: 0 3px 10px rgba(0, 0, 0, .25);
+        color: #FFFFFF;
+      }
+
+      &__face {
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #0DC143;
+        color: #FFFFFF;
+      }
+
+      &__inst {
+        background: #4267B2;
+        color: #FFFFFF;
+      }
+
+      &__telegram {
         border-radius: 50%;
         width: 50px;
         height: 50px;
@@ -825,6 +887,16 @@
       padding: 65px 0 0 0;
       text-align: center;
       button{
+        background: #419FD9;
+        color: #FFFFFF;
+      }
+    }
+
+    &--btn {
+      padding: 65px 0 0 0;
+      text-align: center;
+
+      button {
         border: none;
         padding: 15px 80px;
         border-radius: 80px;
