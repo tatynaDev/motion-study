@@ -14,10 +14,10 @@ import prices from '../../img/Frame 71 (3).png'
 import rectangle from '../../img/Rectangle 19.png'
 import girl from '../../img/Frame 196.png'
 import notebook from '../../img/Frame 196 (1).png'
-import Slider from 'react-slick'
+// import Slider from 'react-slick'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import youtube from '../../img/Frame 243.png'
+// import youtube from '../../img/Frame 243.png'
 import {BiPhoneCall} from "react-icons/bi";
 import {TfiEmail} from "react-icons/tfi";
 import {BsInstagram, BsLink45Deg, BsWhatsapp} from "react-icons/bs";
@@ -25,13 +25,13 @@ import {FaInstagram, FaTelegramPlane} from "react-icons/fa"
 import {FiPhone} from "react-icons/fi";
 
 const Home = () => {
-    const settings = {
-        dots: false,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 2.1,
-        slidesToScroll: 2.1,
-    }
+    // const settings = {
+    //     dots: false,
+    //     infinite: true,
+    //     speed: 500,
+    //     slidesToShow: 2.1,
+    //     slidesToScroll: 2.1,
+    // }
     const [link, setLink] = useState(false);
 
     function getLink() {
@@ -277,26 +277,6 @@ const Home = () => {
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="video">
-                    <div className="container">
-                        <div className="video">
-                            <div className="video--text">
-                                <h1>video testimonials from our students</h1>
-                            </div>
-                            <Slider {...settings}>
-                                <div className="img">
-                                    <img src={youtube} alt=""/>
-                                </div>
-                                <div className="img">
-                                    <img src={youtube} alt=""/>
-                                </div>
-                                <div className="img">
-                                    <img src={youtube} alt=""/>
-                                </div>
-                            </Slider>
                         </div>
                     </div>
                 </div>
