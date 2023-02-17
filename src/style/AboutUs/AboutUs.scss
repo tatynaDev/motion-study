@@ -112,5 +112,250 @@
   }
 }
 
+@media (max-width: 1200px) {
+  #about-us{
+    .about-us{
+      &--start{
+        &__images{
+          &--line{
+            width: 430px;
+            height: 400px;
+          }
+          &--img{
+            top: 180px;
+            left: 140px;
+            img{
+              width: 470px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1140px) {
+  #about-us{
+    .about-us{
+      &--start{
+        &__images{
+          &--line{
+            width: 430px;
+            height: 420px;
+          }
+          &--img{
+            top: 190px;
+            left: 110px;
+            img{
+              width: 470px;
+            }
+          }
+        }
+        &__titles{
+          h2{
+            font-size: 30px;
+            line-height: 40px;
+            padding: 1px 0;
+          }
+          h3{
+            width: 414px;
+          }
+          h4{
+            width: 414px;
+          }
+        }
+      }
+      &--teams{
+        &__block{
+          padding: 30px 0;
+          img{
+            width: 420px;
+          }
+          &--about{
+            width: 420px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  #about-us{
+    .about-us{
+      &--start{
+        &__images{
+          &--line{
+            width: 400px;
+            height: 330px;
+          }
+          &--img{
+            top: 180px;
+            left: 100px;
+            img{
+              width: 400px;
+            }
+          }
+        }
+        &__titles{
+          h2{
+            font-size: 30px;
+            line-height: 40px;
+            padding: 1px 0;
+          }
+          h3{
+            width: 394px;
+          }
+          h4{
+            width: 394px;
+          }
+        }
+      }
+      &--teams{
+        &__block{
+          padding: 30px 0;
+          img{
+            width: 400px;
+          }
+          &--about{
+            width: 400px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 880px) {
+  #about-us{
+    .about-us{
+      &--start{
+        display: flex;
+        justify-content:center;
+        flex-wrap: wrap;
+        align-items: center;
+        &__images{
+          &--line{
+            width: 480px;
+            height: 440px;
+          }
+          &--img{
+            top: 180px;
+            left: 270px;
+            img{
+              width: 500px;
+            }
+          }
+        }
+        &__titles{
+          text-align: center;
+          h1{
+            padding: 30px 0;
+            font-size: 36px;
+          }
+          h2{
+            font-size: 30px;
+            line-height: 40px;
+            padding: 1px 0;
+            width: 500px;
+            text-align: center;
+          }
+          h3{
+            width: 504px;
+            padding: 20px 0;
+            font-size: 26px;
+          }
+          h4{
+            width: 504px;
+            font-size: 26px;
+          }
+        }
+      }
+      &--teams{
+        display: flex;
+        justify-content: center;
+
+        &__block{
+          padding: 30px 0;
+          img{
+            width: 500px;
+          }
+          &--about{
+            width: 500px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #about-us{
+    .about-us{
+      &--start{
+        display: flex;
+        justify-content:center;
+        flex-wrap: wrap;
+        align-items: center;
+        &__images{
+          &--line{
+            width: 480px;
+            height: 440px;
+          }
+          &--img{
+            top: 180px;
+            left: 200px;
+            img{
+              width: 500px;
+            }
+          }
+        }
+        &__titles{
+          text-align: center;
+          h1{
+            padding: 30px 0;
+            font-size: 36px;
+          }
+          h2{
+            font-size: 30px;
+            line-height: 40px;
+            padding: 1px 0;
+            width: 500px;
+            text-align: center;
+          }
+          h3{
+            width: 504px;
+            padding: 20px 0;
+            font-size: 26px;
+          }
+          h4{
+            width: 504px;
+            font-size: 26px;
+          }
+        }
+      }
+      &--text{
+        h1{
+          padding: 20px 0;
+        }
+      }
+      &--teams{
+        display: flex;
+        justify-content: center;
+
+        &__block{
+          padding: 30px 0;
+          img{
+            width: 500px;
+          }
+          &--about{
+            width: 500px;
+          }
+        }
+      }
+    }
+  }
+}
+
 
 
