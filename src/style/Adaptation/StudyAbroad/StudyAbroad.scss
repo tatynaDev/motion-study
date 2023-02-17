@@ -1,0 +1,175 @@
+@media (max-width: 1600px) {
+  #study {
+    .study--block__right{
+      h4 {
+        width: 679px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+}
+
+@media (max-width: 1200px) {
+  #study {
+    .study--block__right {
+      h4 {
+        width: 444px;
+      }
+      h5 {
+        width: 500px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1140px) {
+}
+
+@media (max-width: 992px) {
+  #study {
+    .study--block__right {
+      h4 {
+        width: 350px;
+      }
+      h5 {
+        width: 383px;
+      }
+    }
+  }
+}
+
+@media (max-width: 880px) {
+  #study {
+    .study--block {
+      flex-direction: column;
+    }
+    .study--block__left {
+      .back {
+        margin: 0 0 0 60px;
+      }
+    }
+    .study--block__right{
+      margin-top: 230px;
+      h4 {
+        width: 435px;
+      }
+      button {
+        padding: 20px 95px;
+        margin: 30px 0 0 100px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 660px) {
+}
+
+@media (max-width: 576px) {
+}
+
+@media (max-width: 450px) {
+  #study {
+    .study {
+      h1 {
+        font-size: 38px;
+      }
+      &--line{
+        margin-top: 0;
+      }
+    }
+      .study--block__left {
+        .back {
+          width: 350px;
+          height: 430px;
+        }
+      .imgS{
+        width: 100%;
+      }
+    }
+    .study--block__right{
+      margin-top: 120px;
+      h4 {
+        width: 373px;
+      }
+      button {
+        margin: 30px 0 0 70px;
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  #study {
+    .study--block__left {
+      .back {
+        width: 275px;
+        height: 330px;
+      }
+    }
+    .study--block__right {
+      margin-top: 160px;
+       h4 {
+        width: 335px;
+        margin-left: 27px;
+      }
+      h5 {
+        width: 335px;
+        margin-left: 27px;
+      }
+      button {
+        margin: 30px 0 0 55px;
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  #study {
+    .study h1 {
+      font-size: 32px;
+    }
+    .study--block__left {
+      .back {
+        width: 255px;
+        height: 310px;
+      }
+      .imgS {
+        position: absolute;
+        right: 38px;
+        top: 34px;
+      }
+    }
+    .study--block__right {
+      margin-top: 100px;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  #study {
+    .study--block__left {
+      .back {
+        width: 232px;
+        height: 290px;
+        margin: 0 0 0 35px;
+      }
+    }
+    .study--block__right {
+      h4 {
+        width: 267px;
+        margin-left: 24px;
+      }
+      h5 {
+        width: 267px;
+      }
+      button {
+        margin: 30px 0 0 20px;
+      }
+    }
+  }
+}
