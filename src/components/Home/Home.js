@@ -234,7 +234,6 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-
                 <div id="info">
                     <div className="container">
                         <div className="info">

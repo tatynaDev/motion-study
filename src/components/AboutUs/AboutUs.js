@@ -6,6 +6,7 @@ import team3 from "../../img/team3.png"
 import team4 from "../../img/team4.png"
 import team5 from "../../img/team5.png"
 import team6 from "../../img/team6.png"
+import AboutPlatform from "./AboutPlatform/AboutPlatform";
 
 const AboutUs = () => {
     return (
@@ -13,29 +14,10 @@ const AboutUs = () => {
             <div id="about-us">
                 <div className="container">
                     <div className="about-us">
-                        <div className="about-us--start">
-                            <div className="about-us--start__images">
-                                <div className="about-us--start__images--line"></div>
-                                <div className="about-us--start__images--img">
-                                    <img src={aboutImg} alt=""/>
-                                </div>
-                            </div>
-                            <div className="about-us--start__titles">
-                                <h1>About Us</h1>
-                                <h2>Best Education
-                                    Platform</h2>
-                                <h3>Apparently we had reached a great height in
-                                    the atmosphere, for the sky was a dead black.</h3>
-                                <h4>By the same illusion which lifts the horizon of the sea to
-                                    the level of the spectator on a hillside, the sable cloud
-                                    beneath was dished out, and the car seemed to float in the middle.</h4>
-                            </div>
-                        </div>
-                        <div className="about-us--text">
-                            <h1>
-                                Our Team
-                            </h1>
-                        </div>
+                            <AboutPlatform/>
+                        <h6>
+                            Our Team
+                        </h6>
                         <div className="about-us--teams">
                             <div className="about-us--teams__block">
                                 <img src={team1} alt=""/>
