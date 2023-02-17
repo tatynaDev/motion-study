@@ -1,3 +1,13 @@
+@media (max-width: 1600px) {
+  #header{
+    .header--burger__menu{
+      display: none;
+    }
+    .header--burger{
+      display: none;
+    }
+  }
+}
 @media (max-width: 1560px) {
   #header{
     .header--burger__menu{

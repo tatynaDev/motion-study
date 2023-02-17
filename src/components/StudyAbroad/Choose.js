@@ -17,7 +17,7 @@ const Choose = () => {
     const navigate = useNavigate()
 
     const education = {
-        country: ['America', 'Great Britain', 'Austria', 'Germany', 'Holland', 'Ireland', 'Spain', 'Italy', 'Canada', 'Cyprus', 'China', 'Latvia'],
+        country: ['  America', 'Great Britain', 'Austria', 'Germany', 'Holland', 'Ireland', 'Spain', 'Italy', 'Canada', 'Cyprus', 'China', 'Latvia'],
         img: [America, GreatBritain, Austria, German, France, Ireland, Spain, Italy, Canada, Cyprus, China, Latvia]
     }
 
