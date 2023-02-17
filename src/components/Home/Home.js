@@ -4,7 +4,7 @@ import people from '../../img/Ellipse 4.png'
 import parish from '../../img/Ellipse 5.png'
 import city from '../../img/Ellipse 7.png'
 import frame from '../../img/Frame 23.png'
-import {FiFacebook, FiPhone} from "react-icons/fi";
+import {FiFacebook} from "react-icons/fi";
 import {CiUser} from "react-icons/ci";
 import friends from '../../img/Component 41.png'
 import book from '../../img/Frame 71.png'
@@ -14,14 +14,24 @@ import prices from '../../img/Frame 71 (3).png'
 import rectangle from '../../img/Rectangle 19.png'
 import girl from '../../img/Frame 196.png'
 import notebook from '../../img/Frame 196 (1).png'
-import Slider from 'react-slick'
+// import Slider from 'react-slick'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import youtube from '../../img/Frame 243.png'
+// import youtube from '../../img/Frame 243.png'
 import {BiPhoneCall} from "react-icons/bi";
 import {TfiEmail} from "react-icons/tfi";
 import {BsInstagram, BsLink45Deg, BsWhatsapp} from "react-icons/bs";
 import {FaInstagram, FaTelegramPlane} from "react-icons/fa"
+import {FiPhone} from "react-icons/fi";
+
+const Home = () => {
+    // const settings = {
+    //     dots: false,
+    //     infinite: true,
+    //     speed: 500,
+    //     slidesToShow: 2.1,
+    //     slidesToScroll: 2.1,
+    // }
 
 const Home = () => {
     const settings = {
@@ -43,6 +53,7 @@ const Home = () => {
                 padding: '100px 0',
 
             }}>
+
                 <div id="study1">
                     <div className="container">
                         <div className="study">
@@ -390,6 +401,13 @@ const Home = () => {
                                 <div className="modal--one__face">
                                     <FiFacebook style={{fontSize: '28px'}}/>
                                 </div>
+                                </div>
+                                <div className="modal--one__inst">
+                                    <FaInstagram style={{fontSize: '28px'}}/>
+                                </div>
+                                <div className="modal--one__face">
+                                    <FiFacebook style={{fontSize: '28px'}}/>
+                                </div>
                                 <div className="modal--one__telegram">
                                     <FaTelegramPlane style={{fontSize: '28px'}}/>
                                 </div>
@@ -400,6 +418,7 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
+
             </div>
         </sectioin>
 
