@@ -117,6 +117,9 @@
 @media (max-width: 768px) {
   #choose {
     .choose {
+      &--edu{
+        flex-direction: column;
+      }
       h1 {
         font-size: 40px;
       }
