@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import America from '../../img/America.svg'
 import Austria from '../../img/Austria.svg'
 import Canada from '../../img/Canada.svg'
@@ -12,9 +12,11 @@ import Italy from '../../img/Italy.svg'
 import Latvia from '../../img/Latvia.svg'
 import Spain from '../../img/Spain.svg'
 import {useNavigate} from "react-router-dom";
+import {MdKeyboardArrowDown, MdKeyboardArrowUp} from "react-icons/md";
 
 const Choose = () => {
     const navigate = useNavigate()
+    const [opened, setOpened] = useState('')
 
     const education = {
         country: ['  America', 'Great Britain', 'Austria', 'Germany', 'Holland', 'Ireland', 'Spain', 'Italy', 'Canada', 'Cyprus', 'China', 'Latvia'],
@@ -27,12 +29,56 @@ const Choose = () => {
                 <div className="choose">
                     <h1>Choose the country</h1>
                     <div className='choose--edu'>
-                        <select>
-                            <option>Higher Education</option>
-                        </select>
-                        <select>
-                            <option>specialization</option>
-                        </select>
+
+                        <div className='sel'>
+                            <h5 onClick={() => setOpened('1')}
+                                className='select'>Higher Education <span>{ opened === '1' ? <MdKeyboardArrowDown/> : <MdKeyboardArrowUp/>}</span></h5>
+                            <div className="option" style={{
+                                transition: '.2s',
+                                display: opened === '1' ? 'block' : "none"
+                            }}>
+                                <option>Higher Education</option>
+                                <option>Secondary education</option>
+                                <option>Higher education</option>
+                                <option>Languages courses for youth</option>
+                                <option>Children's language camps</option>
+                            </div>
+                        </div>
+
+                        <div className='sel'>
+                            <h5 onClick={() => setOpened('2')}
+                                className='select'>Specialization <span>{ opened === '2' ? <MdKeyboardArrowDown/> : <MdKeyboardArrowUp/>}</span></h5>
+                            <div className="option" style={{
+                                transition: '.2s',
+                                display: opened === '2' ? 'block' : "none"
+                            }}>
+                                <option selected>Specialization</option>
+                                <option>IT Technologies</option>
+                                <option>Business</option>
+                                <option>Medicine</option>
+                                <option>International Relationships</option>
+                                <option>Tourism</option>
+                            </div>
+                        </div>
+
+
+                        <div className='sel'>
+                            <h5 onClick={() => setOpened('3')}
+                                className='select'>Сountries <span>{ opened === '3' ? <MdKeyboardArrowDown/> : <MdKeyboardArrowUp/>}</span></h5>
+                            <div className="option" style={{
+                                transition: '.2s',
+                                display: opened === '3' ? 'block' : "none"
+                            }}>
+                                <option selected>Сountries</option>
+                                <option>America</option>
+                                <option>Germany</option>
+                                <option>Indonesia</option>
+                                <option>South Korea</option>
+                            </div>
+
+                        </div>
+
+
 
                     </div>
                     <div className='countries'>
