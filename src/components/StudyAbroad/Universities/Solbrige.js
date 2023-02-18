@@ -19,7 +19,7 @@ const Solbrige = () => {
                                 style={{color: '#212121'}}>      1996</span></h2></div>
                             <div className="loc"><h2 style={{color: '#BBBBBB'}}>Type of programs :<span
                                 style={{color: '#212121'}}>         Bachelor Course Magistracy</span></h2></div>
-                            <div className="loc"><h2 style={{color: '#BBBBBB', display:'flex'}}>Specialities : <span
+                            <div className="loc def"><h2 style={{color: '#BBBBBB', display:'flex'}}>Specialities : <span
                                 style={{color: '#212121'}}>    <span style={{display:'flex', flexDirection:'column', marginLeft:'15px'}}>
                                 Fashion and Design
                                 <br/>Jewerly design

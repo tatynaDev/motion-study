@@ -16,16 +16,16 @@
       &__right{
         display: flex;
         flex-direction: column;
+        .def{
+          background: #FDFDFD;
+          box-shadow: 4.6072px 7.37152px 22.1146px rgba(0, 0, 0, 0.1);
+          border: none !important;
+        }
         .loc{
           width: 450px;
           border: 1px solid #BBBBBB;
           padding: 25px 0 25px 60px;
           margin-bottom: 8px;
-          transition: .3s;
-          &:hover{
-            box-shadow: 4.6072px 7.37152px 22.1146px rgba(0, 0, 0, 0.1);
-            border: none;
-          }
           h2{
             font-family: 'Montserrat', sans-serif;
             font-style: normal;
@@ -38,3 +38,4 @@
     }
   }
 }
+@import "../../Adaptation/StudyAbroad/uni/Solbrige";
