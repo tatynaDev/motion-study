@@ -84,7 +84,6 @@ const Home = () => {
                                         </div>
                                     </div>
 
-
                                 </div>
                                 <div className="study--one__contact">
                                     <div className="study--one__contact--name">
@@ -115,6 +114,7 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
+
                 <div id="best">
                     <div className="container">
                         <div className="best">
