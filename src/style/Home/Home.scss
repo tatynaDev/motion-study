@@ -1425,6 +1425,12 @@
 
             &__one {
               &--left {
+                &__last {
+                  img {
+                    width: 100%;
+                  }
+                }
+
                 &__img1 {
                   padding: 0 0 0 100px;
 
@@ -1435,14 +1441,20 @@
               }
 
               &--right {
+                padding: 0;
+
                 &__parish {
                   img {
-                    width: 100%;
+                    width: 90%;
                   }
                 }
 
                 &__city {
-                  padding: 40px 0 0 100px;
+                  img {
+                    width: 100%;
+                  }
+
+                  padding: 40px 0 0 15px;
                 }
               }
             }
@@ -1451,7 +1463,6 @@
           &--img {
             &__frame {
               img {
-                width: 100%;
                 height: 500px;
               }
             }
@@ -1707,7 +1718,7 @@
           flex-direction: column;
 
           &--text {
-            padding: 0 0 50px 44px;
+            //padding: 0 0 0 44px;
 
             h2 {
               font-size: 24px;
@@ -1723,11 +1734,12 @@
           }
 
           &--img {
+            padding: 0;
 
             &__one {
               &--left {
                 &__img1 {
-                  padding: 0 0 0 200px;
+                  padding: 0 0 0 130px;
 
                   img {
                     width: 100%;
@@ -1745,7 +1757,7 @@
                 }
 
                 &__city {
-                  padding: 0 0 0 160px;
+                  padding: 0 0 0 90px;
                 }
               }
             }
@@ -1754,7 +1766,7 @@
           &--img {
             &__frame {
               img {
-                width: 100%;
+                width: 600px !important;
                 height: 600px;
               }
             }
@@ -1763,10 +1775,9 @@
 
         &__contact {
           bottom: -160px;
-          left: 30px;
 
           &--name {
-            width: 743px;
+            width: 610px !important;
             height: 124px;
 
             &__icons {
@@ -1787,10 +1798,10 @@
             }
 
             &__btn {
-              margin: 0 0 0 80px;
+              margin: 0 0 0 30px !important;
 
               button {
-                padding: 20px 65px;
+                padding: 20px 42px;
               }
             }
           }
@@ -1821,6 +1832,7 @@
             img {
               width: 100%;
               height: 360px;
+              object-fit: cover;
 
               &:hover {
                 transform: scale(1.1);
@@ -2072,9 +2084,11 @@
         }
 
         &__modal {
-          display: none;
-          width: 380px;
-
+          //display: none;
+          height: 650px;
+          width: 500px;
+          left: 135px;
+          top: 10px;
         }
 
         &__btn {
@@ -2096,7 +2110,6 @@
           flex-direction: column;
 
           &--text {
-            padding: 0 0 50px 44px;
 
             h2 {
               font-size: 24px;
@@ -2116,7 +2129,7 @@
             &__one {
               &--left {
                 &__img1 {
-                  padding: 0 0 0 200px;
+                  padding: 0 0 0 105px;
 
                   img {
                     width: 100%;
@@ -2134,7 +2147,7 @@
                 }
 
                 &__city {
-                  padding: 50px 0 0 130px;
+                  padding: 50px 0 0 100px;
                 }
               }
             }
@@ -2144,7 +2157,7 @@
             &__frame {
               img {
                 width: 100%;
-                height: 565px;
+                height: 680px;
               }
             }
           }
@@ -2152,14 +2165,13 @@
 
         &__contact {
           bottom: -380px;
-          left: 150px;
 
           &--name {
             display: flex;
             flex-direction: column;
             align-items: start;
             justify-content: space-evenly;
-            width: 450px;
+            width: 600px !important;
             height: 339px;
             border-radius: 20px;
 
@@ -2560,7 +2572,7 @@
 
         &__contact {
           bottom: -381px;
-          left: 50px;
+          left: 5px;
 
           &--name {
             display: flex;
@@ -2974,8 +2986,8 @@
           &--img {
             &__frame {
               img {
-                width: 100%;
-                height: 455px;
+                width: 100% !important;
+                height: 555px;
               }
             }
           }
@@ -2983,14 +2995,13 @@
 
         &__contact {
           bottom: -400px;
-          left: 31px;
 
           &--name {
             display: flex;
             flex-direction: column;
             align-items: start;
             justify-content: space-evenly;
-            width: 485px;
+            width: 510px !important;
             height: 340px;
             border-radius: 21px;
 
@@ -3053,23 +3064,29 @@
       .best {
         display: flex;
         flex-direction: column;
+        align-items: center;
         margin: 444px 0 0 0;
 
         &--one {
           &__text {
-            margin: 1px 0 1px 4px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
 
             h1 {
               font-size: 48px;
+              margin: 0 17px 0 0;
             }
 
             p {
               font-size: 17px;
+              margin: 0;
             }
 
             img {
               width: 85%;
               height: 360px;
+              margin: 0;
 
               &:hover {
                 transform: scale(1.1);
@@ -3090,7 +3107,7 @@
               &__partners {
                 width: 440px;
                 height: 300px;
-                margin: 20px 0 0 33px;
+                margin: 20px 0 0 0;
 
                 &--text {
                   h1 {
@@ -3123,7 +3140,7 @@
               &__partners {
                 width: 440px;
                 height: 300px;
-                margin: 20px 0 0 33px;
+                margin: 20px 0 0 0;
 
                 &--text {
                   h1 {
@@ -3372,7 +3389,7 @@
           flex-direction: column;
 
           &--text {
-            padding: 0 0 50px 44px;
+            padding: 0;
 
             h2 {
               font-size: 23px;
@@ -3388,6 +3405,7 @@
           }
 
           &--img {
+            padding: 40px 0;
 
             &__one {
               &--left {
@@ -3440,13 +3458,12 @@
 
         &__contact {
           bottom: -382px;
-          left: 32px;
 
           &--name {
             flex-direction: column;
             align-items: start;
             justify-content: space-evenly;
-            width: 377px;
+            width: 398px !important;
             height: 341px;
             border-radius: 20px;
             display: flex;
@@ -3518,6 +3535,7 @@
 
             h1 {
               font-size: 40px;
+              margin: 0 69px 0 0;
             }
 
             p {
@@ -3545,7 +3563,7 @@
             &--one {
               &__partners {
                 height: 300px;
-                width: 370px;
+                width: 410px;
 
                 &--text {
                   h1 {
@@ -3567,8 +3585,8 @@
             &--two {
 
               &__partners {
-                width: 370px;
-                height: 300px;
+                width: 410px;
+                height: 310px;
 
                 &--text {
                   h1 {
@@ -3595,13 +3613,12 @@
 
   #exams {
     .exams {
-      margin: 0 0 0 40px;
+      margin: 0;
 
       &--text {
-        text-align: start;
-
         h1 {
           font-size: 39px;
+          margin: 0 30px 0 0;
         }
 
         p {
@@ -3617,13 +3634,13 @@
         display: flex;
 
         &__img {
-          width: 370px;
+          width: 402px;
           height: 581px;
 
           &--more {
             img {
-              width: 370px;
-              height: 270px;
+              width: 402px;
+              height: 256px;
             }
           }
 
@@ -3638,7 +3655,7 @@
 
             p {
               padding: 20px 0 20px 30px;
-              font-size: 12px;
+              font-size: 13px;
               line-height: 25px;
             }
 
@@ -3654,7 +3671,7 @@
           &--flex {
             flex-direction: column;
             align-items: start;
-            width: 362px;
+            width: 402px;
             height: 345px;
             margin: 2px 0 81px 0;
             display: flex;
@@ -3663,7 +3680,7 @@
               margin: 0;
 
               img {
-                width: 362px;
+                width: 402px;
                 height: 163px;
                 object-fit: cover;
               }
@@ -3716,9 +3733,10 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      overflow: hidden;
 
       &--one {
-        width: 389px;
+        width: 404px;
         height: 789px;
 
         &__input {
@@ -3781,7 +3799,7 @@
         padding: 60px 0 60px 47px;
 
         &__text {
-          width: 388px;
+          width: 404px;
 
           &--map {
 
@@ -3816,14 +3834,13 @@
           flex-direction: column;
 
           &--text {
-            padding: 0 0 50px 44px;
 
             h2 {
-              font-size: 24px;
+              font-size: 30px;
             }
 
             h1 {
-              font-size: 49px;
+              font-size: 55px !important;
             }
 
             p {
@@ -3838,15 +3855,15 @@
               &--left {
                 &__last {
                   img {
-                    width: 90%;
+                    width: 120px;
                   }
                 }
 
                 &__img1 {
-                  padding: 0 0 0 58px;
+                  padding: 0 0 0 45px;
 
                   img {
-                    width: 90%;
+                    width: 162px;
                   }
                 }
               }
@@ -3858,16 +3875,16 @@
                   padding: 0 53px 0 0;
 
                   img {
-                    width: 100%;
+                    width: 162px;
                   }
                 }
 
                 &__city {
                   img {
-                    width: 100%;
+                    width: 120px;
                   }
 
-                  padding: 0 20px 0 0;
+                  padding: 0 4px 0 0;
                 }
               }
             }
@@ -3876,8 +3893,8 @@
           &--img {
             &__frame {
               img {
-                width: 100%;
-                height: 308px;
+                width: 100% !important;
+                height: 410px;
               }
             }
           }
@@ -3885,14 +3902,13 @@
 
         &__contact {
           bottom: -381px;
-          left: 31px;
 
           &--name {
             display: flex;
             flex-direction: column;
             align-items: start;
             justify-content: space-evenly;
-            width: 326px;
+            width: 354px !important;
             height: 342px;
             border-radius: 21px;
 
@@ -3963,6 +3979,7 @@
 
             h1 {
               font-size: 37px;
+              margin: 0 50px 0 0;
             }
 
             p {
@@ -3989,7 +4006,7 @@
 
             &--one {
               &__partners {
-                width: 330px;
+                width: 360px;
                 height: 300px;
 
                 &--text {
@@ -4016,7 +4033,7 @@
             &--two {
 
               &__partners {
-                width: 330px;
+                width: 360px;
                 height: 300px;
 
                 &--text {
@@ -4047,7 +4064,6 @@
 
   #exams {
     .exams {
-      margin: 0 0 0 40px;
 
       &--text {
         text-align: start;
@@ -4069,12 +4085,12 @@
         align-items: center;
 
         &__img {
-          width: 345px;
+          width: 370px;
           height: 580px;
 
           &--more {
             img {
-              width: 345px;
+              width: 370px;
               height: 270px;
             }
           }
@@ -4107,7 +4123,7 @@
             display: flex;
             flex-direction: column;
             align-items: start;
-            width: 345px;
+            width: 370px;
             height: 345px;
             margin: 2px 0 81px 0;
 
@@ -4115,7 +4131,7 @@
               margin: 0;
 
               img {
-                width: 345px;
+                width: 370px;
                 height: 162px;
                 object-fit: cover;
               }
@@ -4284,14 +4300,13 @@
           flex-direction: column;
 
           &--text {
-            padding: 0 0 50px 44px;
 
             h2 {
               font-size: 24px;
             }
 
             h1 {
-              font-size: 45px;
+              font-size: 40px !important;
             }
 
             p {
@@ -4344,7 +4359,7 @@
             &__frame {
               img {
                 width: 100%;
-                height: 268px;
+                height: 314px;
               }
             }
           }
@@ -4352,14 +4367,13 @@
 
         &__contact {
           bottom: -381px;
-          left: 31px;
 
           &--name {
             display: flex;
             flex-direction: column;
             align-items: start;
             justify-content: space-evenly;
-            width: 300px;
+            width: 330px !important;
             height: 341px;
             border-radius: 20px;
 
@@ -4455,7 +4469,7 @@
 
             &--one {
               &__partners {
-                width: 307px;
+                width: 340px;
                 height: 280px;
 
                 &--text {
@@ -4482,7 +4496,7 @@
             &--two {
 
               &__partners {
-                width: 307px;
+                width: 340px;
                 height: 280px;
 
                 &--text {
@@ -4513,7 +4527,6 @@
 
   #exams {
     .exams {
-      margin: 0 0 0 40px;
 
       &--text {
         text-align: start;
@@ -4636,7 +4649,7 @@
       align-items: center;
 
       &--one {
-        width: 320px;
+        width: 321px;
         height: 780px;
 
         &__input {
@@ -4682,7 +4695,7 @@
       }
 
       &--two {
-        padding: 60px 0 60px 47px;
+        padding: 60px 0 60px 46px;
 
         &__text {
           width: 320px;
@@ -4736,14 +4749,13 @@
           flex-direction: column;
 
           &--text {
-            padding: 0 0 50px 44px;
 
             h2 {
               font-size: 21px;
             }
 
             h1 {
-              font-size: 38px;
+              font-size: 38px !important;
             }
 
             p {
@@ -4757,7 +4769,6 @@
               &--left {
                 &__last {
                   img {
-                    width: 90%;
                   }
                 }
 
@@ -4765,7 +4776,6 @@
                   padding: 0 0 0 36px;
 
                   img {
-                    width: 90%;
                   }
                 }
               }
@@ -4777,13 +4787,11 @@
                   padding: 0 36px 0 0;
 
                   img {
-                    width: 100%;
                   }
                 }
 
                 &__city {
                   img {
-                    width: 100%;
                   }
 
                   padding: 0 20px 0 0;
@@ -4795,8 +4803,8 @@
           &--img {
             &__frame {
               img {
-                width: 100%;
-                height: 268px;
+                width: 100% !important;
+                height: 340px;
               }
             }
           }
@@ -4804,14 +4812,13 @@
 
         &__contact {
           bottom: -381px;
-          left: 31px;
 
           &--name {
             display: flex;
             flex-direction: column;
             align-items: start;
             justify-content: space-evenly;
-            width: 260px;
+            width: 280px !important;
             height: 342px;
             border-radius: 19px;
 
@@ -4908,7 +4915,7 @@
 
             &--one {
               &__partners {
-                width: 263px;
+                width: 283px;
                 height: 280px;
 
                 &--text {
@@ -4935,7 +4942,7 @@
             &--two {
 
               &__partners {
-                width: 263px;
+                width: 283px;
                 height: 280px;
 
                 &--text {
@@ -4966,7 +4973,6 @@
 
   #exams {
     .exams {
-      margin: 0 0 0 40px;
 
       &--text {
         text-align: start;
@@ -4988,13 +4994,13 @@
         align-items: center;
 
         &__img {
-          width: 315px;
+          width: 290px;
           height: 580px;
 
           &--more {
             img {
-              width: 315px;
-              height: 227px;
+              width: 290px;
+              height: 175px;
             }
           }
 
@@ -5009,7 +5015,7 @@
 
             p {
               padding: 20px 0 20px 30px;
-              font-size: 11px;
+              font-size: 15px;
               line-height: 25px;
             }
 
@@ -5026,15 +5032,15 @@
             display: flex;
             flex-direction: column;
             align-items: start;
-            width: 315px;
-            height: 345px;
+            width: 285px;
+            height: 365px;
             margin: 2px 0 81px 0;
 
             &__img {
               margin: 0;
 
               img {
-                width: 315px;
+                width: 285px;
                 height: 162px;
                 object-fit: cover;
               }
