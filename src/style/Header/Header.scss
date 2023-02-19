@@ -25,6 +25,19 @@
         text-decoration: none;
         padding: 0 30px;
         cursor: pointer;
+        position: relative;
+        &:hover{
+          span{
+            transition: .3s;
+            width: 8px;
+            height: 8px;
+            background: #FF6A6A;
+            border-radius: 50%;
+            position: absolute;
+            bottom: -8px;
+            left: 45%;
+          }
+        }
       }
       .active{
         position: relative;

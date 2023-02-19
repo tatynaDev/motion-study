@@ -136,6 +136,36 @@
           color: #121212;
           text-decoration: none;
           margin: 30px 0;
+          display: flex;
+          align-items: center;
+          :hover{
+              span{
+                transition: .3s;
+                width: 8px;
+                height: 8px;
+                background: #FF6A6A;
+                border-radius: 50%;
+                margin: 5px;
+                //position: absolute;
+                //bottom: -8px;
+                //left: 45%;
+            }
+          }
+        }
+        .active{
+          //position: relative;
+          display: flex;
+          align-items: center;
+          span{
+            width: 8px;
+            height: 8px;
+            background: #FF6A6A;
+            border-radius: 50%;
+            margin: 5px;
+            //position: absolute;
+            //bottom: -8px;
+            //left: 45%;
+          }
         }
       }
       .btn{
