@@ -17,11 +17,11 @@ import notebook from '../../img/Frame 196 (1).png'
 import Slider from 'react-slick'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import youtube from '../../img/Frame 243.png'
+import youtube from '../../img/Frame 243.png';
 import {BiPhoneCall} from "react-icons/bi";
 import {TfiEmail} from "react-icons/tfi";
 import {BsInstagram, BsLink45Deg, BsWhatsapp} from "react-icons/bs";
-import {FaInstagram, FaTelegramPlane} from "react-icons/fa"
+import {FaInstagram, FaTelegramPlane} from "react-icons/fa";
 
 const Home = () => {
     const settings = {
@@ -30,6 +30,31 @@ const Home = () => {
         speed: 500,
         slidesToShow: 2.1,
         slidesToScroll: 2.1,
+        responsive: [{
+            breakpoint: 1024, settings: {
+                slidesToShow: 3, slidesToScroll: 3,
+                infinite: true, dots: false
+            }
+        },
+
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2, initialSlide: 2
+                }
+            },
+            {
+                breakpoint: 576, settings: {
+                    slidesToShow: 1, slidesToScroll: 1,
+                    initialSlide: 1
+                }
+            }, {
+                breakpoint: 480, settings: {
+                    slidesToShow: 1, slidesToScroll: 1
+                }
+            }
+        ]
     }
     const [link, setLink] = useState(false);
 
@@ -84,7 +109,6 @@ const Home = () => {
                                         </div>
                                     </div>
 
-
                                 </div>
                                 <div className="study--one__contact">
                                     <div className="study--one__contact--name">
@@ -115,6 +139,7 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
+
                 <div id="best">
                     <div className="container">
                         <div className="best">

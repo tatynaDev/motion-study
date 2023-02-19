@@ -1,7 +1,8 @@
-#choose{
+#choose {
   padding: 200px 0 300px 0;
-  .choose{
-    h1{
+
+  .choose {
+    h1 {
       font-family: 'Gilroy', sans-serif;
       font-style: normal;
       font-weight: 500;
@@ -9,7 +10,8 @@
       line-height: 58px;
       color: #212121;
     }
-    &--edu{
+
+    &--edu {
       font-family: 'Montserrat', sans-serif;
       font-style: normal;
       font-weight: 500;
@@ -17,20 +19,48 @@
       line-height: 24px;
       text-transform: capitalize;
       color: #010D39;
-      margin-top: 20px;
-      select{
-        border: none;
-        margin: 0 30px 0 0;
-        option{
-          outline: none;
+      margin: 20px 0 0 0;
+      display: flex;
+      .sel{
+        margin: 0 30px;
+        .select {
+          font-family: 'Montserrat', sans-serif;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 26px;
+          line-height: 24px;
+          text-transform: capitalize;
+          color: #010D39;
+          display: flex;
+          align-items: center;
+          margin: 10px 0 30px 0;
+          span{
+            color: #E8C94D;
+            font-size: 26px;
+            font-weight: bold;
+            margin: 5px 0 0 5px;
+          }
+        }
+        .option{
+          padding: 15px;
+          background: #FFFFFF;
+          margin-left: -10px;
+          box-shadow: 4.8212px 7.71391px 24.106px rgba(0, 0, 0, 0.1);
+          option{
+            font-size: 13px;
+            margin: 8px 0;
+            letter-spacing: 1px;
+          }
         }
       }
     }
-    .countries{
+
+    .countries {
       margin: 100px 0;
       display: flex;
       flex-wrap: wrap;
-      .countryCard{
+
+      .countryCard {
         //width: 235px;
         //height: 295px;
         padding: 30px 25px 20px 25px;
@@ -40,10 +70,12 @@
         text-align: center;
         margin: 0 30px 60px 35px;
         transition: .3s;
-        &:hover{
+
+        &:hover {
           transform: scale(1.1);
         }
-        h1{
+
+        h1 {
           font-family: 'Montserrat', sans-serif;
           font-style: normal;
           font-weight: 200;
@@ -56,4 +88,5 @@
     }
   }
 }
+
 @import "../Adaptation/StudyAbroad/choose";

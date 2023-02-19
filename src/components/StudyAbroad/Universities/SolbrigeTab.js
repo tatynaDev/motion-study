@@ -13,7 +13,7 @@ import I5 from '../../../img/I5.png'
 import I6 from '../../../img/I6.png'
 
 const SolbrigeTab = () => {
-    const [tab, setTab] = useState('')
+    const [tab, setTab] = useState('first')
 
     useEffect(() => {
         setTab('first')
@@ -22,9 +22,20 @@ const SolbrigeTab = () => {
     return (
         <>
             <div className='categories'>
-                <button onClick={() => setTab('first')} style={{borderBottom: tab !== 'first' && 'none'}}>Description</button>
-                <button onClick={() => setTab('second')} style={{borderBottom: tab !== 'second' && 'none'}}>Cost</button>
-                <button onClick={() => setTab('third')} style={{borderBottom: tab !== 'third' && 'none'}}>Photo</button>
+                <button onClick={() => setTab('first')} style={{
+                    borderBottom: tab !== 'first' && 'none'
+
+                }}>Description
+                </button>
+                <button onClick={() => setTab('second')} style={{
+                    borderBottom: tab !== 'second' && 'none'
+
+                }}>Cost
+                </button>
+                <button onClick={() => setTab('third')} style={{
+                    borderBottom: tab !== 'third' && 'none'
+
+                }}>Photo</button>
             </div>
 
             <div className="first" style={{
@@ -93,7 +104,7 @@ const SolbrigeTab = () => {
                             <div>
                                 <h2>High school / secondary education (or higher)
                                     Completed Secondary Education ( 12 years, in some countries 11 years)</h2>
-                                <hr className='line'/>
+                                <hr className='line six'/>
                             </div>
                         </div>
                         <div className='description--six'>
@@ -101,8 +112,10 @@ const SolbrigeTab = () => {
                             <div>
                                 <h2>
                                     The entry qualification documents are accepted in the following languages: English /
-                                    Lithuanian.Often you can get a suitable transcript from your school. If this is not the
-                                    case, you will need official translations along with verified copies of the original.
+                                    Lithuanian.Often you can get a suitable transcript from your school. If this is not
+                                    the
+                                    case, you will need official translations along with verified copies of the
+                                    original.
                                 </h2>
                             </div>
                         </div>
@@ -140,7 +153,7 @@ const SolbrigeTab = () => {
                             </div>
                         </div>
 
-                        <div className="apply--text">
+                        <div className="apply--text sec">
                             <h2>Apply Now!!! <br/><span>Fall semester 2023</span></h2>
                         </div>
 
@@ -172,7 +185,7 @@ const SolbrigeTab = () => {
             }}>
                 <p>
                     <span style={{
-                        color:'#36ADF0'
+                        color: '#36ADF0'
                     }}>The Cost Of Studying</span> at the Istituto Europeo di Design for the 2023-2024 academic year:
                 </p>
                 <p>
