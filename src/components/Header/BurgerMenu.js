@@ -16,7 +16,7 @@ const BurgerMenu = ({button, setButton}) => {
                 <NavLink onClick={() => setButton(false)}
                     className='link' to={'/StudyAbroad'}>Study Abroad <span></span></NavLink>
                 <NavLink onClick={() => setButton(false)}
-                    className='link' to={'/Contacts'}>Contacts <span></span></NavLink>
+                    className='link' to={'/'}>Contacts <span></span></NavLink>
             </div>
 
             <div className="btn">

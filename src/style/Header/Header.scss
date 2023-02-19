@@ -1,20 +1,22 @@
-#header{
+#header {
   background: #FFFFFF;
   box-shadow: 5px 8px 24px rgba(0, 0, 0, 0.1);
   width: 100%;
   position: fixed;
   z-index: 90;
 
-  .header--line{
+  .header--line {
     border: 9px solid #FF6A6A;
   }
-  .header{
+
+  .header {
     padding: 20px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    &--nav{
-      &__link{
+
+    &--nav {
+      &__link {
         font-family: 'Montserrat', sans-serif;
         font-style: normal;
         font-weight: 500;
@@ -26,8 +28,9 @@
         padding: 0 30px;
         cursor: pointer;
         position: relative;
-        &:hover{
-          span{
+
+        &:hover {
+          span {
             transition: .3s;
             width: 8px;
             height: 8px;
@@ -39,9 +42,11 @@
           }
         }
       }
-      .active{
+
+      .active {
         position: relative;
-        span{
+
+        span {
           width: 8px;
           height: 8px;
           background: #FF6A6A;
@@ -52,20 +57,29 @@
         }
       }
     }
-    &--choose{
-      input{
+
+    &--choose {
+
+      input {
+        padding: 10px 15px;
+        margin: 0 20px;
+        background: rgba(255, 255, 255, 0.95);
         opacity: 0.95;
         border: 0.8px solid rgba(86, 9, 187, 0.2);
         border-radius: 8px;
-        padding: 10px 15px;
-        margin: 0 20px;
-        background: rgba(255,255,255,0.37);
+        transition: .3s;
+        &:hover {
+          -webkit-box-shadow: 0 0 8px 1px rgba(149, 66, 219, 0.63);
+          -moz-box-shadow: 0 0 8px 1px rgba(149, 66, 219, 0.63);
+          box-shadow: 0 0 8px 1px rgba(149, 66, 219, 0.63);
+        }
       }
 
-      select{
+      select {
         background: transparent;
         border: none;
-        option{
+
+        option {
 
           font-family: 'Montserrat', sans-serif;
           font-style: normal;
