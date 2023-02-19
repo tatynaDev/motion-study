@@ -2,59 +2,42 @@
   left: 41%;
   top: 250px;
   position: relative;
-  background: #7318FB;
+  background: #fff;
   width: 200px;
   height: 190px;
   border-radius: 50%;
   overflow: hidden;
-  animation: res 6s ease-in-out alternate;
-    @keyframes res {
-      0% {
-        transform: scale(1);
-      }
-      50% {
-        transform: scale(2);
-      }
-      99% {
-        transform: scale(8);
-      }
-      100% {
-        transform: scale(10);
-      }
-    }
-
 
   .load {
-    margin: 50px 0 0 30px;
+    margin: 50px 0 0 0;
     position: absolute;
-    width: 160px;
+    width: 200px;
     height: 80px;
     overflow: hidden;
     text-align: center;
 
     h1 {
+      color: #7318FB;
       font-family: 'SF Pro Display', sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 78px;
       text-align: center;
       text-transform: capitalize;
-      color: #FDFDFD;
-      animation: text 3s alternate;
+      animation: text 2s alternate;
       @keyframes text {
         0% {
           transform: translateY(0);
         }
         50% {
-          transition: 2s;
-          transform: translateY(-450px);
+          transform: translateY(-180px);
         }
-        99% {
-          transform: translateY(-910px);
-          transition: 2s;
+        70% {
+          transform: translateY(-280px);
         }
-        100% {
-          transform: translateY(-1000px);
+        100%{
+          transform: translateY(-360px);
+          transition: 1s;
         }
       }
     }

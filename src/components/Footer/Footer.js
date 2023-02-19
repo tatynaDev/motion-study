@@ -26,7 +26,7 @@ const Footer = () => {
                             <NavLink className='navbar--nav' to={'/'}>Home</NavLink>
                             <NavLink className='navbar--nav' to={'/AboutUs'}>About Us</NavLink>
                             <NavLink className='navbar--nav' to={'/StudyAbroad'}>Study Abroad</NavLink>
-                            <NavLink className='navbar--nav' to={'/Contacts'}>Contacts</NavLink>
+                            <NavLink className='navbar--nav' to={'/'}>Contacts</NavLink>
                         </div>
 
                         <h1>

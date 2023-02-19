@@ -17,11 +17,11 @@ import notebook from '../../img/Frame 196 (1).png'
 import Slider from 'react-slick'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import youtube from '../../img/Frame 243.png'
+import youtube from '../../img/Frame 243.png';
 import {BiPhoneCall} from "react-icons/bi";
 import {TfiEmail} from "react-icons/tfi";
 import {BsInstagram, BsLink45Deg, BsWhatsapp} from "react-icons/bs";
-import {FaInstagram, FaTelegramPlane} from "react-icons/fa"
+import {FaInstagram, FaTelegramPlane} from "react-icons/fa";
 
 const Home = () => {
     const settings = {
