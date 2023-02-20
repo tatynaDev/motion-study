@@ -9,7 +9,7 @@ const Footer = () => {
 
     setTimeout(() => {
         setLoad(false);
-    }, 2000);
+    }, 1500);
 
     return (
         <section id='footer' style={{

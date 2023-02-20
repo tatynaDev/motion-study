@@ -2,7 +2,7 @@
   left: 41%;
   top: 250px;
   position: relative;
-  background: #fff;
+  background: transparent;
   width: 200px;
   height: 190px;
   border-radius: 50%;
@@ -24,23 +24,111 @@
       font-size: 78px;
       text-align: center;
       text-transform: capitalize;
-      animation: text 2s alternate;
+      animation: text .7s alternate;
       @keyframes text {
         0% {
-          transform: translateY(0);
+          transform: translateY(-10);
         }
         50% {
           transform: translateY(-180px);
         }
         70% {
-          transform: translateY(-280px);
+          transform: translateY(-270px);
         }
         100%{
           transform: translateY(-360px);
-          transition: 1s;
         }
       }
     }
 
   }
 }
+
+
+@media (max-width: 1440px) {
+  #load {
+    left: 45%;
+    top: 500px;
+  }
+}
+@media (max-width: 1200px) {
+  #load {
+    left: 40%;
+    top: 400px;
+  }
+}
+@media (max-width: 1140px) {
+  #load {
+    left: 40%;
+    top: 350px;
+  }
+}
+@media (max-width: 1024px) {
+  #load {
+    left: 40%;
+    top: 300px;
+  }
+}
+@media (max-width: 992px) {
+  #load {
+    left: 40%;
+    top: 290px;
+  }
+}
+@media (max-width: 880px) {
+  #load {
+    left: 40%;
+    top: 270px;
+  }
+}
+@media (max-width: 768px) {
+  #load {
+    left: 40%;
+    top: 270px;
+  }
+}
+@media (max-width: 660px) {
+  #load {
+    left: 35%;
+    top: 200px;
+  }
+}
+@media (max-width: 576px) {
+  #load {
+    left: 33%;
+    top: 230px;
+    .load{
+      width: 200px;
+      height: 60px;
+      h1{
+        font-size: 50px;
+        @keyframes text {
+          0% {
+            transform: translateY(0);
+            transition: .1s;
+          }
+          50% {
+            transform: translateY(-75px);
+            transition: .05s;
+          }
+          70% {
+            transform: translateY(-115px);
+            transition: .1s;
+          }
+          100%{
+            transform: translateY(-230px);
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 450px) {
+  #load {
+    left: 30%;
+    top: 220px;
+  }
+}
+@media (max-width: 400px) {}
+@media (max-width: 375px) {}
+@media (max-width: 320px) {}
