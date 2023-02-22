@@ -3,7 +3,11 @@
     padding: 160px 0 30px 0;
 
     .about-us {
-
+      &--start {
+        &__images {
+          padding: 130px 0 0 0;
+        }
+      }
       &--text {
         padding: 100px 0 5px 0;
 
@@ -25,13 +29,13 @@
         &__images {
           &--line {
             width: 430px;
+            height: 430px;
             height: 450px;
           }
-
           &--img {
             top: 220px;
+            left: 120px;
             left: 140px;
-
             img {
               width: 470px;
             }
@@ -51,6 +55,9 @@
 
 @media (max-width: 1140px) {
   #about-us {
+    padding: 120px 0 30px 0;
+
+    .about-us {
     .about-us {
       &--start {
         &__images {
@@ -104,6 +111,12 @@
   }
 }
 
+@media (max-width: 1024px) {
+  #about-us {
+    padding: 120px 0 30px 0;
+
+    .about-us {
+
 @media (max-width: 1140px) {
   #about-us {
     .about-us {
@@ -111,12 +124,14 @@
         &__images {
           &--line {
             width: 400px;
+            height: 350px;
             height: 340px;
             margin-top: 100px;
           }
 
           &--img {
             top: 190px;
+            left: 100px;
             left: 110px;
 
             img {
@@ -157,7 +172,6 @@
       }
     }
   }
-
 }
 
 @media (max-width: 992px) {
@@ -172,6 +186,7 @@
 
           &--img {
             top: 180px;
+            left: 90px;
             left: 100px;
 
             img {
@@ -217,6 +232,8 @@
 @media (max-width: 880px) {
   #about-us {
     .about-us {
+      padding: 20px 0 80px 0 !important;
+
       &--start {
         display: flex;
         justify-content: center;
@@ -225,12 +242,20 @@
 
         &__images {
           &--line {
+            width: 450px;
+            height:500px;
+            margin-right: 100px;
+            top: -138px;
             width: 480px;
             height: 440px;
           }
 
           &--img {
             top: 180px;
+            left: 220px;
+
+            img {
+              width: 450px;
             left: 270px;
 
             img {
@@ -240,6 +265,11 @@
         }
 
         &__titles {
+          text-align: start;
+
+
+          h1 {
+            font-size: 38px;
           text-align: center;
 
           h1 {
@@ -252,6 +282,7 @@
             line-height: 40px;
             padding: 1px 0;
             width: 500px;
+            text-align: start;
             text-align: center;
           }
 
@@ -268,6 +299,9 @@
         }
       }
 
+      &--text {
+        text-align: start;
+      }
       &--teams {
         display: flex;
         justify-content: center;
@@ -300,11 +334,13 @@
         &__images {
           &--line {
             width: 480px;
+            height: 550px;
             height: 440px;
           }
 
           &--img {
             top: 180px;
+            left: 140px;
             left: 200px;
 
             img {
@@ -382,11 +418,17 @@
         &__images {
 
           &--line {
+            height: 550px;
             height: 599px;
             margin: 60px 112px 60px 0;
           }
 
           &--img {
+            top: 650px;
+            left: 90px;
+
+            img {
+              width: 500px;
             top: 710px;
             left: 90px;
 
@@ -472,6 +514,7 @@
         &__images {
 
           &--line {
+            height: 540px;
             height: 580px;
             margin: 60px 34px 0 0;
             padding: 10px 0;
@@ -614,6 +657,7 @@
 
   }
   #about-us .about-us--start__images--line {
+    height: 335px;
     height: 359px;
     width: 304px;
     margin: 60px 34px 0 0;
@@ -648,6 +692,9 @@
   }
   #about-us .about-us--start__images--img img {
     width: 274px;
+    margin: 97px 0 0 17px;
+
+
     margin: 128px 0 0 29px;
   }
   #about-us .about-us--start__images--line {
