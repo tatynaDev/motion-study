@@ -6,10 +6,11 @@ import BurgerMenu from "./BurgerMenu";
 const Header = () => {
     const [load, setLoad] = useState(true)
     const [button, setButton] = useState(false)
+    const [inp, setInp] = useState(false)
 
     setTimeout(() => {
         setLoad(false);
-    }, 2000);
+    }, 1500);
 
     return (
         <section id='header' style={{
@@ -26,12 +27,13 @@ const Header = () => {
                         <NavLink className='header--nav__link' to={'/'}>Home <span></span></NavLink>
                         <NavLink className='header--nav__link' to={'/AboutUs'}>About Us <span></span></NavLink>
                         <NavLink className='header--nav__link' to={'/StudyAbroad'}>Study Abroad <span></span></NavLink>
-                        <NavLink className='header--nav__link' to={'/Contacts'}>Contacts <span></span></NavLink>
+                        <NavLink className='header--nav__link' to={'/'}>Contacts <span></span></NavLink>
                     </div>
 
                     <div className="header--choose">
 
-                        <input className='country'
+                        <input onClick={() => setInp(!inp)}
+                            className='country'
                                type="text"
                                list='data-list'
                                aria-label='search'

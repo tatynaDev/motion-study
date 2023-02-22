@@ -8,7 +8,6 @@
           padding: 130px 0 0 0;
         }
       }
-
       &--text {
         padding: 100px 0 5px 0;
 
@@ -31,12 +30,12 @@
           &--line {
             width: 430px;
             height: 430px;
+            height: 450px;
           }
-
           &--img {
             top: 220px;
             left: 120px;
-
+            left: 140px;
             img {
               width: 470px;
             }
@@ -59,12 +58,13 @@
     padding: 120px 0 30px 0;
 
     .about-us {
-
+    .about-us {
       &--start {
         &__images {
           &--line {
             width: 430px;
             height: 420px;
+            margin-top: 100px;
           }
 
           &--img {
@@ -117,16 +117,22 @@
 
     .about-us {
 
+@media (max-width: 1140px) {
+  #about-us {
+    .about-us {
       &--start {
         &__images {
           &--line {
             width: 400px;
             height: 350px;
+            height: 340px;
+            margin-top: 100px;
           }
 
           &--img {
             top: 190px;
             left: 100px;
+            left: 110px;
 
             img {
               width: 400px;
@@ -181,6 +187,7 @@
           &--img {
             top: 180px;
             left: 90px;
+            left: 100px;
 
             img {
               width: 400px;
@@ -239,6 +246,8 @@
             height:500px;
             margin-right: 100px;
             top: -138px;
+            width: 480px;
+            height: 440px;
           }
 
           &--img {
@@ -247,6 +256,10 @@
 
             img {
               width: 450px;
+            left: 270px;
+
+            img {
+              width: 500px;
             }
           }
         }
@@ -257,6 +270,11 @@
 
           h1 {
             font-size: 38px;
+          text-align: center;
+
+          h1 {
+            padding: 30px 0;
+            font-size: 36px;
           }
 
           h2 {
@@ -265,6 +283,7 @@
             padding: 1px 0;
             width: 500px;
             text-align: start;
+            text-align: center;
           }
 
           h3 {
@@ -283,7 +302,6 @@
       &--text {
         text-align: start;
       }
-
       &--teams {
         display: flex;
         justify-content: center;
@@ -317,11 +335,13 @@
           &--line {
             width: 480px;
             height: 550px;
+            height: 440px;
           }
 
           &--img {
             top: 180px;
             left: 140px;
+            left: 200px;
 
             img {
               width: 500px;
@@ -333,6 +353,7 @@
           text-align: center;
 
           h1 {
+            padding: 30px 0;
             font-size: 36px;
           }
 
@@ -398,6 +419,7 @@
 
           &--line {
             height: 550px;
+            height: 599px;
             margin: 60px 112px 60px 0;
           }
 
@@ -407,6 +429,11 @@
 
             img {
               width: 500px;
+            top: 710px;
+            left: 90px;
+
+            img {
+              width: 528px;
             }
           }
         }
@@ -415,6 +442,7 @@
           text-align: start;
 
           h1 {
+            padding: 31px 0;
             font-size: 36px;
           }
 
@@ -440,6 +468,7 @@
 
       &--text {
         h1 {
+          padding: 20px 0;
           text-align: start;
         }
       }
@@ -486,6 +515,7 @@
 
           &--line {
             height: 540px;
+            height: 580px;
             margin: 60px 34px 0 0;
             padding: 10px 0;
           }
@@ -628,6 +658,7 @@
   }
   #about-us .about-us--start__images--line {
     height: 335px;
+    height: 359px;
     width: 304px;
     margin: 60px 34px 0 0;
     padding: 10px 0;
@@ -646,6 +677,7 @@
 
 @media (max-width: 320px) {
   #about-us .about-us--start__titles h1 {
+    padding: 31px 0;
     font-size: 18px;
   }
   #about-us .about-us--start__titles h3 {
@@ -663,6 +695,7 @@
     margin: 97px 0 0 17px;
 
 
+    margin: 128px 0 0 29px;
   }
   #about-us .about-us--start__images--line {
     height: 284px;

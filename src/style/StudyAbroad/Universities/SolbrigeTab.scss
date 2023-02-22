@@ -1,8 +1,4 @@
 .categories{
-  width: 1126px;
-  height: 65px;
-  background: #F5F5F5;
-  border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -14,7 +10,9 @@
     line-height: 27px;
     color: #212121;
     border: none;
-    background: transparent;
+    width: 375px;
+    height: 65px;
+    background: #F5F5F5;
     border-bottom: 3px solid #FF6A6A;
   }
 }
@@ -270,4 +268,4 @@
     margin: 15px;
   }
 }
-
+@import "../../Adaptation/StudyAbroad/uni/SolbrigeTab";

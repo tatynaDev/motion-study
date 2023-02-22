@@ -2,62 +2,133 @@
   left: 41%;
   top: 250px;
   position: relative;
-  background: #7318FB;
+  background: transparent;
   width: 200px;
   height: 190px;
   border-radius: 50%;
   overflow: hidden;
-  animation: res 6s ease-in-out alternate;
-    @keyframes res {
-      0% {
-        transform: scale(1);
-      }
-      50% {
-        transform: scale(2);
-      }
-      99% {
-        transform: scale(8);
-      }
-      100% {
-        transform: scale(10);
-      }
-    }
-
 
   .load {
-    margin: 50px 0 0 30px;
+    margin: 50px 0 0 0;
     position: absolute;
-    width: 160px;
+    width: 200px;
     height: 80px;
     overflow: hidden;
     text-align: center;
 
     h1 {
+      color: #7318FB;
       font-family: 'SF Pro Display', sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 78px;
       text-align: center;
       text-transform: capitalize;
-      color: #FDFDFD;
-      animation: text 3s alternate;
+      animation: text .7s alternate;
       @keyframes text {
         0% {
-          transform: translateY(0);
+          transform: translateY(-10);
         }
         50% {
-          transition: 2s;
-          transform: translateY(-450px);
+          transform: translateY(-180px);
         }
-        99% {
-          transform: translateY(-910px);
-          transition: 2s;
+        70% {
+          transform: translateY(-270px);
         }
-        100% {
-          transform: translateY(-1000px);
+        100%{
+          transform: translateY(-360px);
         }
       }
     }
 
   }
 }
+
+
+@media (max-width: 1440px) {
+  #load {
+    left: 45%;
+    top: 500px;
+  }
+}
+@media (max-width: 1200px) {
+  #load {
+    left: 40%;
+    top: 400px;
+  }
+}
+@media (max-width: 1140px) {
+  #load {
+    left: 40%;
+    top: 350px;
+  }
+}
+@media (max-width: 1024px) {
+  #load {
+    left: 40%;
+    top: 300px;
+  }
+}
+@media (max-width: 992px) {
+  #load {
+    left: 40%;
+    top: 290px;
+  }
+}
+@media (max-width: 880px) {
+  #load {
+    left: 40%;
+    top: 270px;
+  }
+}
+@media (max-width: 768px) {
+  #load {
+    left: 40%;
+    top: 270px;
+  }
+}
+@media (max-width: 660px) {
+  #load {
+    left: 35%;
+    top: 200px;
+  }
+}
+@media (max-width: 576px) {
+  #load {
+    left: 33%;
+    top: 230px;
+    .load{
+      width: 200px;
+      height: 60px;
+      h1{
+        font-size: 50px;
+        @keyframes text {
+          0% {
+            transform: translateY(0);
+            transition: .1s;
+          }
+          50% {
+            transform: translateY(-75px);
+            transition: .05s;
+          }
+          70% {
+            transform: translateY(-115px);
+            transition: .1s;
+          }
+          100%{
+            transform: translateY(-230px);
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 450px) {
+  #load {
+    left: 30%;
+    top: 220px;
+  }
+}
+@media (max-width: 400px) {}
+@media (max-width: 375px) {}
+@media (max-width: 320px) {}
